@@ -630,6 +630,7 @@ void hipewInit( int* resultDriver, int* resultRtc, uint32_t flags, const char** 
   const char* hiprtc_paths[] = {
       "hiprtc0801.dll",
       "hiprtc0800.dll",
+      "hiprtc0716.dll",
       "hiprtc07016.dll",
       "hiprtc07015.dll",
       "hiprtc07014.dll",
@@ -1281,7 +1282,7 @@ _LIBRARY_FIND( rtcLib, hiprtcVersion );
 #pragma endregion
 
 
-	s_resultRtc = HIPEW_SUCCESS;
+	s_resultRtc = hiprtcCreateProgram ? HIPEW_SUCCESS : HIPEW_ERROR_OPEN_FAILED;
 	*resultRtc = s_resultRtc;
   }
   else
