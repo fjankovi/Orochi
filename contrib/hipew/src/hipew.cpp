@@ -630,6 +630,7 @@ void hipewInit( int* resultDriver, int* resultRtc, uint32_t flags, const char** 
   const char* hiprtc_paths[] = {
       "hiprtc0801.dll",
       "hiprtc0800.dll",
+      "hiprtc0717.dll",
       "hiprtc0716.dll",
       "hiprtc07016.dll",
       "hiprtc07015.dll",
