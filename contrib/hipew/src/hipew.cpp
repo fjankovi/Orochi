@@ -632,8 +632,9 @@ void hipewInit( int* resultDriver, int* resultRtc, uint32_t flags, const char** 
       "hiprtc0800.dll",
       "hiprtc0717.dll",
       "hiprtc0716.dll",
-      "hiprtc07016.dll",
-      "hiprtc07015.dll",
+      "hiprtc0715.dll",
+      "hiprtc0714.dll",
+      // Early 7.14 builds used this name before switching to hiprtc0714.dll.
       "hiprtc07014.dll",
       "hiprtc07013.dll",
       "hiprtc07012.dll",
